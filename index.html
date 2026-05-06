@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parkinson’s Factors Project</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg" style="background-color: #b8860b;">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/website_logo.jpg" alt="Logo" style="height: 45px;">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active text-white" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="disease.html">Disease Prevalence/Incidence</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="environment.html">Environmental Factors</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="genetic.html">Genetic Factors</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="correlation.html">Correlation of Factors</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="datasets.html">Datasets</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO SECTION -->
+<header class="hero d-flex align-items-center" 
+        style="
+            background-image: url('images/BACKGROUND.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            color: #ffffff;
+        ">
+    <div class="container text-center">
+        <h1 class="display-4 fw-bold">Understanding Parkinson’s Disease</h1>
+        <p class="lead">Exploring genetic, environmental, and epidemiological factors</p>
+    </div>
+</header>
+
+<!-- MAIN CONTENT -->
+<section class="py-5" style="background-color: #2C3531; color: #ffffff;">
+    <div class="container">
+
+        <!-- EXECUTIVE SUMMARY -->
+        <h2 class="fw-bold">Project Overview</h2>
+        <p>
+            Parkinson’s disease is an incurable disease that affects mobility and brain function. 
+            This disease is well-known but poorly understood. There has been basic research done 
+            into the existence of Parkinson’s in the United States. It is this research that we 
+            have decided to investigate and to create visualizations for. Primarily, our goal is 
+            to show some of the relevant factors to Parkinson’s disease. There are many factors, 
+            both genetic and environmental, that research has shown to have connections to 
+            Parkinson’s. A user should be able to explore these factors and make a basic evaluation 
+            about which factor may have a greater contribution to the disease’s development.
+        </p>
+
+        <!-- WEBSITE DESCRIPTION -->
+        <h3 class="fw-bold mt-4">About This Website</h3>
+        <p>
+            This website is the end result of our investigation into Parkinson’s research. 
+            The different tabs at the top of the page will allow you to explore the visualizations 
+            our group has created for this project.
+        </p>
+
+        <!-- USER INSTRUCTIONS -->
+        <h3 class="fw-bold mt-4">How to Use This Website</h3>
+        <ul>
+            <li>Use the navigation bar at the top of the page to explore different factors related to Parkinson’s disease.</li>
+            <li>The <strong>Disease Prevalence/Incidence</strong> tab shows choropleth maps of Parkinson’s cases.</li>
+            <li>The <strong>Environmental Factors</strong> tab shows pesticide and pollution visualizations.</li>
+            <li>The <strong>Genetic Factors</strong> tab shows gene correlation networks.</li>
+            <li>The <strong>Correlation of Factors</strong> tab compares multiple variables together.</li>
+            <li>You can return to this Home page at any time by clicking the Home button.</li>
+        </ul>
+
+    </div>
+</section>
+
+<!-- OPTIONAL FOOTER -->
+<footer class="text-center py-3" style="background-color: #1f2624; color: #ffffff;">
+    CMSC 436 Team 4 — Dylan McPhillips, Jared Zutt, Kennedy Ellis, Zoe Astifidis  
+    <br>Special Thanks to former group member Jackson Keyser
+</footer>
+
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

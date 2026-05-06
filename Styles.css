@@ -1,0 +1,121 @@
+/* ============================
+   GLOBAL THEME
+============================ */
+body {
+    background-color: #2C3531;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Make all headings readable on dark background */
+h1, h2, h3, h4, h5, h6 {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+/* ============================
+   NAVBAR
+============================ */
+.navbar {
+    background-color: #b8860b !important;
+}
+
+.navbar-brand img {
+    height: 45px;
+}
+
+.nav-link {
+    color: #ffffff !important;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    opacity: 0.9;
+}
+
+/* ============================
+   HERO SECTION (Homepage)
+============================ */
+.hero {
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    margin-top: 10px;
+}
+
+/* ============================
+   MAIN CONTENT SECTIONS
+============================ */
+section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.container p,
+.container li {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* ============================
+   LINKS
+============================ */
+a {
+    color: #b8860b;
+    font-weight: 600;
+}
+
+a:hover {
+    color: #d4a64f;
+}
+
+/* ============================
+   FOOTER
+============================ */
+footer {
+    background-color: #1f2624;
+    color: #ffffff;
+    padding: 15px 0;
+    font-size: 0.95rem;
+}
+
+/* ============================
+   IMAGE STYLING (for graphs)
+============================ */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+/* ============================
+   UTILITY CLASSES
+============================ */
+.text-center {
+    text-align: center;
+}
+
+.mt-4 {
+    margin-top: 1.5rem;
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem;
+}
