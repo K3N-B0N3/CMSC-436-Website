@@ -1,25 +1,24 @@
 /* ============================
-   GLOBAL THEME
+   GLOBAL THEME (PLAN COLORS)
 ============================ */
 body {
-    background-color: #2C3531;
-    color: #ffffff;
+    background-color: #16445E; /* Deep teal */
+    color: #ffffff;            /* White text */
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-/* Make all headings readable on dark background */
 h1, h2, h3, h4, h5, h6 {
     color: #ffffff;
     font-weight: 700;
 }
 
 /* ============================
-   NAVBAR
+   NAVBAR / TASKBAR (Gold)
 ============================ */
 .navbar {
-    background-color: #b8860b !important;
+    background-color: #D9B04D !important; /* Gold */
 }
 
 .navbar-brand img {
@@ -37,31 +36,50 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ============================
-   HERO SECTION (Homepage)
+   HERO BANNER (Home Page Only)
 ============================ */
 .hero {
     height: 60vh;
+    background-image: url('../Images/BACKGROUND.jpg');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+
     display: flex;
+    justify-content: center;
     align-items: center;
     text-align: center;
+
+    position: relative;
     color: #ffffff;
     padding: 20px;
 }
 
-.hero h1 {
+/* Dark overlay for readability */
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content h1 {
     font-size: 3rem;
     font-weight: 800;
 }
 
-.hero p {
+.hero-content p {
     font-size: 1.3rem;
-    margin-top: 10px;
+    font-weight: 300;
 }
 
 /* ============================
-   MAIN CONTENT SECTIONS
+   MAIN CONTENT
 ============================ */
 section {
     padding-top: 40px;
@@ -75,47 +93,32 @@ section {
 }
 
 /* ============================
-   LINKS
+   LINKS (Gold)
 ============================ */
 a {
-    color: #b8860b;
+    color: #D9B04D; /* Gold */
     font-weight: 600;
 }
 
 a:hover {
-    color: #d4a64f;
+    color: #f0c76a; /* Lighter gold */
 }
 
 /* ============================
-   FOOTER
+   FOOTER (Darker Teal)
 ============================ */
 footer {
-    background-color: #1f2624;
+    background-color: #0F2D3C; /* Dark teal */
     color: #ffffff;
     padding: 15px 0;
     font-size: 0.95rem;
 }
 
 /* ============================
-   IMAGE STYLING (for graphs)
+   IMAGES
 ============================ */
 img {
     max-width: 100%;
     height: auto;
     border-radius: 6px;
-}
-
-/* ============================
-   UTILITY CLASSES
-============================ */
-.text-center {
-    text-align: center;
-}
-
-.mt-4 {
-    margin-top: 1.5rem;
-}
-
-.mb-4 {
-    margin-bottom: 1.5rem;
 }
