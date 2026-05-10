@@ -3,104 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Datasets | Parkinson’s Factors</title>
+    <title>Datasets | Parkinson’s Factors Project</title>
+
+    <!-- BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- BOOTSTRAP ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+    <!-- YOUR CSS -->
     <link rel="stylesheet" href="Styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 </head>
 
 <body class="page-datasets">
 
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
-                <img src="Images/website_logo.jpg" alt="Logo"  style="height: 150px;">
-            </a>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="DiseasePrevalence.html">Disease Prevalence/Incidence</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="EnvironmentalFactors.html">Environmental Factors</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="GeneticFactors.html">Genetic Factors</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="Correlation.html">Correlation of Factors</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link active" href="Datasets.html">Datasets</a>
-                    </li>
-
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- PAGE HEADER -->
-    <header class="py-5 text-center">
-        <h1 class="fw-bold">Datasets & Code</h1>
-        <p class="lead">Explore the datasets and notebooks used to generate our visualizations.</p>
-    </header>
-
-    <!-- MAIN CONTENT -->
-    <section class="container">
-
-        <h2 class="mb-3">Available Datasets</h2>
-        <p>Below are the datasets used throughout our project. These include environmental, genetic, and epidemiological data sources used to create our visualizations.</p>
-
-        <ul class="list-group my-4">
-            <li class="list-group-item bg-dark text-white border-secondary">
-                <strong>Disease Prevalence & Incidence Dataset</strong><br>
-                <a href="Datasets/disease_prevalence.csv" class="text-warning">Download CSV</a>
-            </li>
-
-            <li class="list-group-item bg-dark text-white border-secondary">
-                <strong>Pesticide Usage Dataset</strong><br>
-                <a href="Datasets/pesticides.csv" class="text-warning">Download CSV</a>
-            </li>
-
-            <li class="list-group-item bg-dark text-white border-secondary">
-                <strong>Gene Correlation Dataset</strong><br>
-                <a href="Datasets/gene_data.csv" class="text-warning">Download CSV</a>
-            </li>
-
-            <li class="list-group-item bg-dark text-white border-secondary">
-                <strong>Combined Correlation Dataset</strong><br>
-                <a href="Datasets/correlation.csv" class="text-warning">Download CSV</a>
-            </li>
-        </ul>
-
-        <h2 class="mt-5 mb-3">Code Notebook</h2>
-        <p>You can view the full code used to clean, process, and visualize the data below:</p>
-
-        <a href="Notebooks/Final_Notebook.ipynb" class="btn btn-warning fw-bold">
-            View Jupyter Notebook
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <!-- LOGO -->
+        <a class="navbar-brand" href="index.html">
+            <img src="Images/website_logo.jpg" alt="Logo" style="height: 150px;">
         </a>
 
-    </section>
+        <!-- MOBILE TOGGLER -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <!-- FOOTER -->
-    <footer class="text-center mt-5">
-        <p>© 2024 Parkinson’s Factors Project — CMSC 436 Team 4</p>
-    </footer>
+        <!-- NAV LINKS -->
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto">
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+                <!-- HOME ICON -->
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        <i class="bi bi-house-door-fill" style="font-size: 1.5rem; color: #B8860B;"></i>
+                    </a>
+                </li>
+
+                <li class="nav-item"><a class="nav-link" href="DiseasePrevalenceIncidence.html">Disease Prevalence/Incidence</a></li>
+                <li class="nav-item"><a class="nav-link" href="EnvironmentalFactors.html">Environmental Factors</a></li>
+                <li class="nav-item"><a class="nav-link" href="Geneticfactors.html">Genetic Factors</a></li>
+                <li class="nav-item"><a class="nav-link" href="Correlation.html">Correlation of Factors</a></li>
+                <li class="nav-item"><a class="nav-link active" href="Datasets.html">Datasets</a></li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- PAGE HEADER -->
+<header class="py-5 text-center">
+    <h1 class="fw-bold">Datasets & Code</h1>
+    <p class="lead">Explore the datasets and code used to generate our visualizations.</p>
+</header>
+
+<!-- MAIN CONTENT -->
+<section class="container">
+
+    <!-- DATASET LINKS -->
+    <h2 class="fw-bold mb-3">Available Datasets</h2>
+    <p>Below are the datasets used throughout our project. Each dataset corresponds to one or more visualizations shown in the tabs above.</p>
+
+    <ul class="list-group my-4">
+
+        <li class="list-group-item bg-dark text-white border-secondary">
+            <strong>Disease Prevalence & Incidence Dataset</strong><br>
+            <a href="Datasets/disease_prevalence.csv" class="text-warning">Download CSV</a>
+        </li>
+
+        <li class="list-group-item bg-dark text-white border-secondary">
+            <strong>Pesticide Usage Dataset</strong><br>
+            <a href="Datasets/pesticides.csv" class="text-warning">Download CSV</a>
+        </li>
+
+        <!-- ⭐ UPDATED GENE CORRELATION DATASET BLOCK -->
+        <li class="list-group-item bg-dark text-white border-secondary">
+            <strong>Gene Correlation Datasets</strong><br>
+
+            <a href="Datasets/Gene,Closest_Pesticide.csv" class="text-warning">
+                Download Closest Pesticide csv
+            </a><br>
+
+            <a href="Datasets/Gene,PD_Relevance_Score.csv" class="text-warning">
+                Download PD Relevance Score csv
+            </a><br>
+
+            <a href="Datasets/Gene,X,Y.csv" class="text-warning">
+                Download Gene Coordinates csv
+            </a>
+        </li>
+
+        <li class="list-group-item bg-dark text-white border-secondary">
+            <strong>Combined Correlation Dataset</strong><br>
+            <a href="Datasets/correlation.csv" class="text-warning">Download CSV</a>
+        </li>
+
+    </ul>
+
+    <!-- CODE NOTEBOOK -->
+    <h2 class="fw-bold mt-5 mb-3">Code Notebook</h2>
+    <p>The full code used to clean, process, and visualize the data can be viewed below:</p>
+
+    <a href="Notebooks/Final_Notebook.ipynb" class="btn btn-warning fw-bold">
+        View Jupyter Notebook
+    </a>
+
+    <!-- CREDITS -->
+    <h2 class="fw-bold mt-5 mb-3">Credits</h2>
+    <p>
+        This project was created by <strong>CMSC 436 Team 4</strong>:  
+        Dylan McPhillips, Jared Zutt, Kennedy Ellis, Zoe Astifidis  
+        <br>Special thanks to former group member <strong>Jackson Keyser</strong>.
+    </p>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="text-center mt-5">
+    CMSC 436 Team 4 — Dylan McPhillips, Jared Zutt, Kennedy Ellis, Zoe Astifidis  
+    <br>Special Thanks to former group member Jackson Keyser
+</footer>
+
+<!-- BOOTSTRAP JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>

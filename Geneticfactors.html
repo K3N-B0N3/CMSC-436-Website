@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genetic Factors | Parkinson’s Factors Project</title>
+
+    <!-- BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- BOOTSTRAP ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+    <!-- YOUR CSS -->
+    <link rel="stylesheet" href="Styles.css">
+</head>
+
+<body class="page-genetic">
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <!-- LOGO -->
+        <a class="navbar-brand" href="index.html">
+            <img src="Images/website_logo.jpg" alt="Logo" style="height: 150px;">
+        </a>
+
+        <!-- MOBILE TOGGLER -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- NAV LINKS -->
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto">
+
+                <!-- HOME ICON -->
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        <i class="bi bi-house-door-fill" style="font-size: 1.5rem; color: #B8860B;"></i>
+                    </a>
+                </li>
+
+                <li class="nav-item"><a class="nav-link" href="DiseasePrevalenceIncidence.html">Disease Prevalence/Incidence</a></li>
+                <li class="nav-item"><a class="nav-link" href="EnvironmentalFactors.html">Environmental Factors</a></li>
+                <li class="nav-item"><a class="nav-link active" href="Geneticfactors.html">Genetic Factors</a></li>
+                <li class="nav-item"><a class="nav-link" href="Correlation.html">Correlation of Factors</a></li>
+                <li class="nav-item"><a class="nav-link" href="Datasets.html">Datasets</a></li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- PAGE HEADER -->
+<header class="py-5 text-center">
+    <h1 class="fw-bold">Genetic Factors</h1>
+    <p class="lead">Exploring gene correlations associated with Parkinson’s disease.</p>
+</header>
+
+<!-- MAIN CONTENT -->
+<section class="container">
+
+    <!-- TEXT DESCRIPTION -->
+    <h2 class="fw-bold mb-3">Understanding the Gene Graph</h2>
+    <p>
+        This graph shows genes that are correlated with Parkinson’s disease. 
+        Connections between circles represent relationships between genes, and the 
+        different color groups correspond to different pesticides. Something we want 
+        this visualization to make you consider is:
+    </p>
+
+    <ul>
+        <li>Do certain pesticides affect certain genes, causing them to mutate?</li>
+        <li>How closely are certain genes related to the disease?</li>
+    </ul>
+
+    <!-- GENE GRAPH IMAGE -->
+    <div class="text-center my-4">
+        <img src="Images/Gene Graph Final.png" alt="Gene Graph Visualization" class="img-fluid rounded shadow">
+        <p class="mt-2 text-warning">Figure: Gene correlation network created in QGIS</p>
+    </div>
+
+    <!-- LINK TO DATASETS -->
+    <div class="mt-5">
+        <a href="Datasets.html" class="btn btn-warning fw-bold">
+            View Datasets Used for This Visualization
+        </a>
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="text-center mt-5">
+    CMSC 436 Team 4 — Dylan McPhillips, Jared Zutt, Kennedy Ellis, Zoe Astifidis  
+    <br>Special Thanks to former group member Jackson Keyser
+</footer>
+
+<!-- BOOTSTRAP JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
