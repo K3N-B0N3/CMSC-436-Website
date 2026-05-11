@@ -2,17 +2,19 @@
    GLOBAL THEME (PLAN COLORS)
 ============================ */
 body {
-    background-color: #16445E; /* Deep teal fallback */
+    background-color: #16445E;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
 
-    color: #ffffff; /* White text */
+    color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
 }
+
+
 
 
 h1, h2, h3, h4, h5, h6 {
