@@ -48,7 +48,7 @@ h1, h2, h3, h4, h5, h6 {
 ============================ */
 .hero {
     height: 60vh;
-    background-image: url('/Images/BACKGROUND.jpg'); /* FIXED PATH */
+    background-image: url('Images/BACKGROUND.jpg'); /* FIXED PATH */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
