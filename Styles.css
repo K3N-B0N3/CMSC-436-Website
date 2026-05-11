@@ -3,7 +3,6 @@
 ============================ */
 body {
     background-color: #16445E; /* Deep teal fallback */
-    background-image: url('Images/brainwave.jpeg'); /* your image */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
